@@ -1,18 +1,85 @@
 <template>
-    <section class="container">
-        <div>
-            <h1 class="title">
-                Welcome To Roomie Split
-            </h1>
-            <h2 class="subtitle">
-                Universal Vue.js Application
-            </h2>
-            <div class="links">
-                <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
-                <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
+    <div>
+        <section class="hero is-bold is-primary is-small">
+    
+            <!-- Hero content: will be in the middle -->
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="title">
+                        Welcome To Roomie Split
+                    </h1>
+                    <h2 class="subtitle">
+                        Apps to simplify living with others.
+                    </h2>
+    
+                    <hr>
+    
+                    Tools
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    
+        <el-row :gutter="20">
+            <el-col :sm="{span: 8, offset: 4}" :xs="24">
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            Component
+                        </p>
+                        <a class="card-header-icon">
+                            <span class="icon">
+                                <i class="fa fa-angle-down"></i>
+                            </span>
+                        </a>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                            <a>@bulmaio</a>.
+                            <a>#css</a>
+                            <a>#responsive</a>
+                            <br>
+                            <small>11:09 PM - 1 Jan 2016</small>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <a class="card-footer-item">Save</a>
+                        <a class="card-footer-item">Edit</a>
+                        <a class="card-footer-item">Delete</a>
+                    </footer>
+                </div>
+            </el-col>
+            <el-col :span="8" :xs="24">
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            Component
+                        </p>
+                        <a class="card-header-icon">
+                            <span class="icon">
+                                <i class="fa fa-angle-down"></i>
+                            </span>
+                        </a>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                            <a>@bulmaio</a>.
+                            <a>#css</a>
+                            <a>#responsive</a>
+                            <br>
+                            <small>11:09 PM - 1 Jan 2016</small>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <a class="card-footer-item">Save</a>
+                        <a class="card-footer-item">Edit</a>
+                        <a class="card-footer-item">Delete</a>
+                    </footer>
+                </div>
+            </el-col>
+        </el-row>
+    </div>
 </template>
 
 <script>
@@ -26,33 +93,28 @@ export default {
 </script>
 
 <style lang="scss">
+.hero-head {
+    background-color: #324157;
+}
 
-.container {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+#site-header {
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-bottom: 5px solid transparent;
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
 }
 
 .title {
-    font-family: "Lato", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    /* 1 */
-    display: block;
+    font-family: 'Lato';
     font-weight: 300;
     font-size: 4rem;
-    color: #35495e;
-    letter-spacing: 1px;
 }
 
 .subtitle {
+    font-size: 2.5rem;
     font-weight: 300;
-    font-size: 42px;
-    color: #526488;
-    word-spacing: 5px;
-    padding-bottom: 15px;
-}
-
-.links {
-    padding-top: 15px;
 }
 </style>
