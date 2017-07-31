@@ -1,13 +1,13 @@
 <template>
     <div>
-        test {{ title }}
+        Rendering post {{ title }} test
     </div>
 </template>
 
 <script>
 import axios from 'axios';
 export default {
-    layout: 'nav',
+    layout: 'CheckList',
     validate({ params }) {
         return /^\d+$/.test(params.id);
     },
@@ -18,3 +18,7 @@ export default {
 
 };
 </script>
+
+<style lang="scss">
+    
+</style>

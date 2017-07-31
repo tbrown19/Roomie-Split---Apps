@@ -18,11 +18,25 @@ module.exports = {
                 content: 'Nuxt.js project'
             }
         ],
-        link: [{
-            rel: 'icon',
-            type: 'image/x-icon',
-            href: '/favicon.ico'
-        }]
+        link: [
+            {
+                rel: 'icon',
+                type: 'image/x-icon',
+                href: '/favicon.ico'
+            },
+            {
+                rel: 'stylesheet',
+                href: 'https://fonts.googleapis.com/css?family=Lato:300,400,700'
+            },
+            {
+                rel: 'stylesheet',
+                href: 'https://fonts.googleapis.com/css?family=Righteous'
+            },
+            {
+                rel: 'stylesheet',
+                href: 'https://fonts.googleapis.com/css?family=Roboto'
+            }
+        ]
     },
     /*
      ** Customize the progress-bar color
