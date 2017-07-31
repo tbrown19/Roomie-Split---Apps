@@ -63,5 +63,16 @@ module.exports = {
         },
         vendor: ['axios']
     },
-    plugins: ['plugins/element-ui']
+    plugins: ['plugins/element-ui'],
+    css: [
+        {
+            src: 'bulma',
+            lang: 'sass'
+        },
+        {
+            src: 'font-awesome/css/font-awesome.css',
+            lang: 'css'
+        }
+
+    ]
 };

@@ -1,16 +1,11 @@
 <template>
     <div>
-        <home-nav-bar></home-nav-bar>
         <nuxt/>
     </div>
 </template>
 
 <script>
-import HomeNavBar from '~/components/layouts/HomeNavBar.vue';
 export default {
-    components: {
-        HomeNavBar
-    }
 };
 </script>
 <style>
