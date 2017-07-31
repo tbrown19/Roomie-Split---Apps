@@ -7,6 +7,7 @@
 <script>
 import axios from 'axios';
 export default {
+    layout: 'nav',
     validate({ params }) {
         return /^\d+$/.test(params.id);
     },

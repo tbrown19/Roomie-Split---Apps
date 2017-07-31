@@ -48,5 +48,6 @@ module.exports = {
             }
         },
         vendor: ['axios']
-    }
+    },
+    plugins: ['plugins/element-ui']
 };
