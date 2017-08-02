@@ -1,9 +1,7 @@
 <template>
     <nav class="navbar">
         <div class="navbar-brand">
-            <a class="navbar-item" href="http://bulma.io" id="site-header">
-                RoomieSplit
-            </a>
+            <router-link class="navbar-item" id="site-header" to="/"> Roomie Split</router-link>
     
             <div class="navbar-burger">
                 <span></span>
@@ -21,10 +19,6 @@
 
 #site-header {
     color: #f5f5f5;
-    margin: 0;
-    padding: 0 20px;
-    box-sizing: border-box;
-    border-bottom: 5px solid transparent;
     font-family: 'Righteous', cursive;
     font-size: 2rem;
 }

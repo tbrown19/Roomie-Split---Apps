@@ -31,7 +31,7 @@
                         </div>
                     </div>
                     <footer class="card-footer">
-                        <router-link class="card-footer-item" to="/contact">View</router-link>
+                        <router-link class="card-footer-item" to="/move-in-checklist">View</router-link>
                     </footer>
                 </div>
                 </el-col> 

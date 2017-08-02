@@ -1,59 +1,27 @@
 <template>
-    <el-menu theme="dark" :default-active="activeIndex" mode="horizontal" router>
-        <el-row type="flex">
-            <el-col :span="24" :md="{span:22, offset:1}" :lg="{span:20, offset:4}">
-                <li id="site-header">
-                    Roomie Split - Move In Checklist
-                </li>
-                <el-menu-item index="/">
-                    <a>Home</a>
-                </el-menu-item>
-    
-                <el-menu-item index="/explanation">
-                    Explanation
-                </el-menu-item>
-    
-                <el-menu-item index="/about">
-                    About
-                </el-menu-item>
-            </el-col>
-        </el-row>
-    </el-menu>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <router-link id="site-header" to="/"> Roomie Split</router-link>
+
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 </template>
-
 <script>
-export default {
-    data() {
-        return {
-            activeIndex: this.$router.currentRoute.path
-        };
-    }
-};
-
 </script>
 
 <style>
+.navbar {
+    background-color: #324157;
+}
+
 #site-header {
-    color: #dfe5ec;
-    float: left;
-    height: 60px;
-    line-height: 60px;
-    margin: 0;
-    padding: 0 20px;
-    position: relative;
-    box-sizing: border-box;
-    border-bottom: 5px solid transparent;
+    color: #f5f5f5;
     font-family: 'Righteous', cursive;
-    font-size: 1.5rem;
-}
-
-.el-menu-item {
-    font-size: 1.1rem !important;
-    font-family: 'Roboto', sans-serif;
-    color: #dfe5ec !important;
-}
-
-.is-active{
-    color: #00d1b2 !important;
+    font-size: 2rem;
 }
 </style>
