@@ -1,64 +1,40 @@
 <template>
-    <div>    
+    <div>
         <el-row :gutter="20">
-            <el-col :sm="{span: 8, offset: 4}" :xs="24">
+            <el-col :sm="{span: 9, offset: 3}" :xs="24">
                 <div class="card">
-                    <header class="card-header">
-                        <p class="card-header-title">
-                            Component
-                        </p>
-                        <a class="card-header-icon">
-                            <span class="icon">
-                                <i class="fa fa-angle-down"></i>
-                            </span>
-                        </a>
-                    </header>
                     <div class="card-content">
-                        <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-                            <a>@bulmaio</a>.
-                            <a>#css</a>
-                            <a>#responsive</a>
-                            <br>
-                            <small>11:09 PM - 1 Jan 2016</small>
+                        <h1 class="tool-card-title has-text-centered">
+                            Rent Calculator
+                        </h1>
+                        <div class="content has-text-centered">
+                            When living with roommates it can be difficult to decide how much each person should contribute towards the rent.
+                            <br> <br> 
+                            This tools allow you to calculate the values based on a number of customizable factors and calculations.
                         </div>
                     </div>
                     <footer class="card-footer">
-                        <a class="card-footer-item">Save</a>
-                        <a class="card-footer-item">Edit</a>
-                        <a class="card-footer-item">Delete</a>
+                        <router-link class="card-footer-item" to="/contact">View</router-link>
                     </footer>
                 </div>
             </el-col>
-            <el-col :span="8" :xs="24">
-                <div class="card">
-                    <header class="card-header">
-                        <p class="card-header-title">
-                            Component
-                        </p>
-                        <a class="card-header-icon">
-                            <span class="icon">
-                                <i class="fa fa-angle-down"></i>
-                            </span>
-                        </a>
-                    </header>
+             <el-col :span="9" :xs="24">
+                    <div class="card">
                     <div class="card-content">
-                        <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
-                            <a>@bulmaio</a>.
-                            <a>#css</a>
-                            <a>#responsive</a>
-                            <br>
-                            <small>11:09 PM - 1 Jan 2016</small>
+                        <h1 class="tool-card-title has-text-centered">
+                            Move In Checklist
+                        </h1>
+                        <div class="content has-text-centered">
+                            When moving into a new apartmemnt or house there are a number of items that have to be brought by different people.
+                            <br> <br>
+                            This tools allow you to create a move in check list to keep track of who is bringing what.
                         </div>
                     </div>
                     <footer class="card-footer">
-                        <a class="card-footer-item">Save</a>
-                        <a class="card-footer-item">Edit</a>
-                        <a class="card-footer-item">Delete</a>
+                        <router-link class="card-footer-item" to="/contact">View</router-link>
                     </footer>
                 </div>
-            </el-col>
+                </el-col> 
         </el-row>
     </div>
 </template>
@@ -69,6 +45,18 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+.tool-card-title {
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
 
+.card-content {
+    padding-top: 12px;
+}
+
+.card-footer-item {
+    font-size: 1.4rem;
+}
 </style>

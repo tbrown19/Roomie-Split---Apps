@@ -19,7 +19,7 @@
     
                     <home-nav-center></home-nav-center>
     
-                    <hr>
+                    <hr class="no-top-margin">
     
                 </div>
             </div>
@@ -50,5 +50,13 @@ export default {
 .subtitle {
     font-size: 2.5rem;
     font-weight: 300;
+}
+.hero-body{
+     padding-bottom: .5rem; 
+     padding-top: 2rem;
+}
+
+.no-top-margin{
+    margin-top: 0;
 }
 </style>
