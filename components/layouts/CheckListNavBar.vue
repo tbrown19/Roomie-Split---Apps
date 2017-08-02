@@ -2,7 +2,9 @@
     <nav class="navbar">
         <div class="navbar-brand">
             <router-link id="site-header" to="/"> Roomie Split</router-link>
-
+            <h1>
+                <slot name="page-title"></slot>
+            </h1>
             <div class="navbar-burger">
                 <span></span>
                 <span></span>

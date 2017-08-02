@@ -3,7 +3,9 @@
     
         <section class="hero is-bold is-small">
             <div class="hero-header">
-                <home-nav-bar></home-nav-bar>
+                <home-nav-bar>
+                    <h1 slot="page-title"> Home </h1>
+                </home-nav-bar>
             </div>
             <!-- Hero content: will be in the middle -->
             <div class="hero-body">

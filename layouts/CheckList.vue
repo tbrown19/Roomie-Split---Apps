@@ -1,6 +1,8 @@
 <template>
     <div id="app">
-        <check-list-nav></check-list-nav>
+        <home-nav-bar>
+            <h1 slot="page-title"> Move in Checklist</h1>
+        </home-nav-bar>
         <el-row type="flex" justify="center" :gutter="20">
             <el-col :span="22" :lg="{span:18}" id="main-content">
                 <nuxt/>
@@ -10,10 +12,10 @@
 </template>
 
 <script>
-import CheckListNav from '~/components/Layouts/CheckListNavBar.vue';
+import HomeNavBar from '../components/layouts/HomeNavBar';
 export default {
     components: {
-        CheckListNav
+        HomeNavBar
     },
     data() {
         return {
