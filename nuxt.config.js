@@ -65,6 +65,7 @@ module.exports = {
     },
     plugins: ['plugins/element-ui'],
     css: [
+        'assets/main.css',
         {
             src: 'bulma',
             lang: 'sass'

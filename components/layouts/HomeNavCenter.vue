@@ -1,17 +1,19 @@
 <template>
     <nav class="level">
         <p class="level-item has-text-centered">
-            <a class="link is-info">About</a>
+            <router-link to="/about">About</router-link>
         </p>
         <p class="level-item has-text-centered">
-            <a class="link is-info">Tools</a>
+            <router-link to="/tools">Tools</router-link>
         </p>
         <p class="level-item has-text-centered">
-            <a class="link is-info">Contact</a>
+            <router-link to="/contact">Contact</router-link>
         </p>
     </nav>
 </template>
 
 <style>
-
+.level-item {
+    font-size: 1.4rem;
+}
 </style>
