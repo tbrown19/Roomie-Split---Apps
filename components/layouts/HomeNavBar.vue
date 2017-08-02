@@ -1,37 +1,31 @@
 <template>
-    <nav-bar>
-        <li id="site-header">
-            Roomie Split
-        </li>
-        <el-menu-item index="/">
-            <a>Home</a>
-        </el-menu-item>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="http://bulma.io" id="site-header">
+                RoomieSplit
+            </a>
     
-        <el-menu-item index="/explanation">
-            Rent Splitter
-        </el-menu-item>
-    
-        <el-menu-item index="/about">
-            Move In Checklist
-        </el-menu-item>
-    </nav-bar>
+            <div class="navbar-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 </template>
 
-<script>
-import NavBar from './NavBar.vue';
-export default {
-    components: {
-        NavBar
-    },
-    data() {
-        return {
-            activeIndex: this.$router.currentRoute.path
-        };
-    }
-};
-
-</script>
-
 <style>
+.navbar {
+    background-color: #324157;
+}
 
+#site-header {
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+    border-bottom: 5px solid transparent;
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
+}
 </style>

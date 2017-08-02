@@ -3,19 +3,7 @@
     
         <section class="hero is-bold is-small">
             <div class="hero-header">
-                <nav class="navbar">
-                    <div class="navbar-brand">
-                        <a class="navbar-item" href="http://bulma.io" id="site-header">
-                            RoomieSplit
-                        </a>
-    
-                        <div class="navbar-burger">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                </nav>
+                <home-nav-bar></home-nav-bar>
             </div>
             <!-- Hero content: will be in the middle -->
             <div class="hero-body">
@@ -29,20 +17,10 @@
     
                     <hr>
     
-                    <nav class="level">
-                        <p class="level-item has-text-centered">
-                            <a class="link is-info">About</a>
-                        </p>
-                        <p class="level-item has-text-centered">
-                            <a class="link is-info">Tools</a>
-                        </p>
-                        <p class="level-item has-text-centered">
-                            <a class="link is-info">Contact</a>
-                        </p>
-                    </nav>
-
+                    <home-nav-center></home-nav-center>
+    
                     <hr>
-
+    
                 </div>
             </div>
         </section>
@@ -111,7 +89,13 @@
 </template>
 
 <script>
+import HomeNavBar from '../components/layouts/HomeNavBar';
+import HomeNavCenter from '../components/layouts/HomeNavCenter';
+
 export default {
+    components: {
+        HomeNavBar, HomeNavCenter
+    },
     data: function () {
         return {
             test: 'derp'
@@ -121,20 +105,6 @@ export default {
 </script>
 
 <style lang="scss">
-.navbar {
-    background-color: #324157;
-}
-
-#site-header {
-    color: #f5f5f5;
-    margin: 0;
-    padding: 0 20px;
-    box-sizing: border-box;
-    border-bottom: 5px solid transparent;
-    font-family: 'Righteous', cursive;
-    font-size: 2rem;
-}
-
 .title {
     font-family: 'Lato';
     font-weight: 300;
@@ -146,7 +116,7 @@ export default {
     font-weight: 300;
 }
 
-.level-item{
+.level-item {
     font-size: 1.4rem;
 }
 </style>
