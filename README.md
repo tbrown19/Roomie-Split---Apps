@@ -1,6 +1,6 @@
-# apartment-checklist
+# Roomie Split Apps
 
-> checklist for apartment needs
+> A collection of apps to help simplify the process of living with others.
 
 ## Build Setup
 

@@ -1,7 +1,22 @@
 <template>
     <div>
-        <section class="hero is-bold is-primary is-small">
     
+        <section class="hero is-bold is-small">
+            <div class="hero-header">
+                <nav class="navbar">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="http://bulma.io" id="site-header">
+                            RoomieSplit
+                        </a>
+    
+                        <div class="navbar-burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
             <!-- Hero content: will be in the middle -->
             <div class="hero-body">
                 <div class="container has-text-centered">
@@ -14,7 +29,20 @@
     
                     <hr>
     
-                    Tools
+                    <nav class="level">
+                        <p class="level-item has-text-centered">
+                            <a class="link is-info">About</a>
+                        </p>
+                        <p class="level-item has-text-centered">
+                            <a class="link is-info">Tools</a>
+                        </p>
+                        <p class="level-item has-text-centered">
+                            <a class="link is-info">Contact</a>
+                        </p>
+                    </nav>
+
+                    <hr>
+
                 </div>
             </div>
         </section>
@@ -93,7 +121,7 @@ export default {
 </script>
 
 <style lang="scss">
-.hero-head {
+.navbar {
     background-color: #324157;
 }
 
@@ -116,5 +144,9 @@ export default {
 .subtitle {
     font-size: 2.5rem;
     font-weight: 300;
+}
+
+.level-item{
+    font-size: 1.4rem;
 }
 </style>
