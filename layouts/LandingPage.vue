@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import HomeNavBar from '../components/layouts/HomeNavBar';
+import HomeNavBar from '../components/layouts/NavBar';
 import HomeNavCenter from '../components/layouts/HomeNavCenter';
 
 export default {
@@ -42,7 +42,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .title {
     font-family: 'Lato';
     font-weight: 300;

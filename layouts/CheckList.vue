@@ -1,8 +1,8 @@
 <template>
-    <div id="app">
-        <home-nav-bar>
+    <div>
+        <nav-bar>
             <h1 slot="page-title"> Move in Checklist</h1>
-        </home-nav-bar>
+        </nav-bar>
         <el-row type="flex" justify="center" :gutter="20">
             <el-col :span="22" :lg="{span:18}" id="main-content">
                 <nuxt/>
@@ -12,10 +12,10 @@
 </template>
 
 <script>
-import HomeNavBar from '../components/layouts/HomeNavBar';
+import NavBar from '../components/layouts/NavBar';
 export default {
     components: {
-        HomeNavBar
+        NavBar
     },
     data() {
         return {
@@ -26,8 +26,9 @@ export default {
 
 </script>
 
-<style lang="scss">
-body {
-    margin: 0 !important;
+<style lang="scss" scoped>
+
+#main-content{
+    padding-top: 1%;
 }
 </style>

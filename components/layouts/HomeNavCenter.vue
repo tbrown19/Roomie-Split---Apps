@@ -4,7 +4,7 @@
             <router-link to="/about">About</router-link>
         </p>
         <p class="level-item has-text-centered">
-            <router-link to="/tools">Tools</router-link>
+            <router-link to="/">Tools</router-link>
         </p>
         <p class="level-item has-text-centered">
             <router-link to="/contact">Contact</router-link>
